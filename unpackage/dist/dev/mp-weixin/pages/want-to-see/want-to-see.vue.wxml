@@ -1,0 +1,1 @@
+<import src="/components/cmd-nav-bar.vue.wxml" /><template name="21e8f8ae"><view class="_view 21e8f8ae"><template background-color="#fff" font-color="#000" back title="想看" data="{{...$root['0'], ...$root[$kk+'21e8f8ae-0'],$root}}" is="57b2c676"></template></view></template>

@@ -5,7 +5,8 @@
 			:fixed="false" 
 			background-color="#00C777"
 			font-color="#fff"
-			back title="搜索">
+			back 
+			title="搜索">
 		</cmd-nav-bar>
         <!-- 搜索条 -->
         <view style="width:96%; padding:20upx 2%; background:#00C777; flex-wrap:nowrap;">
@@ -41,9 +42,7 @@
     </view>
 </template>
 <script>
-import cmdNavBar from "@/components/cmd-nav-bar.vue"
 export default {
-	components: {cmdNavBar},
     data() {
         return {
             searchKey : "",

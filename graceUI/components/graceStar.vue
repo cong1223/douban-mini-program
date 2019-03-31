@@ -21,8 +21,8 @@ export default {
 			type : Array,
 			default : function(){
 				return [
-					"../../static/imgs/star.png",
-					"../../static/imgs/star-active.png"
+					"../../static/images/star_0.png",
+					"../../static/images/star_1.png"
 				];
 			}
 		},
@@ -50,7 +50,7 @@ export default {
 }
 </script>
 <style>
-.grace-stars{padding:5px; display:flex; flex-wrap:nowrap; justify-content:space-between;}
-.grace-stars-items{width:100%; margin:0 5px;}
-.grace-stars-items image{width:100%;}
+.grace-stars{display:flex; flex-wrap:nowrap;}
+.grace-stars-items{width:15upx;margin:0 3px;}
+.grace-stars-items image{height: 100%;width:100%;}
 </style>

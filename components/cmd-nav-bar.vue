@@ -7,7 +7,7 @@
         <view v-if="back && !leftTitle || iconOne && !leftTitle " @tap="$_iconOneClick" class="cmd-nav-bar-left-icon">
           <cmd-icon :type="back ?'chevron-left' : iconOne" size="24" :color="setFontColor"></cmd-icon>
         </view>
-				<view class="grace-iconfont icon-home icons.enName"></view>
+				<view class="grace-iconfont icon-home icons.enName" :style="'color:'+setFontColor+'!important'"></view>
         <text v-if="leftText && !leftTitle" @tap="$_leftTextClick" :style="'color:'+setFontColor">{{leftText}}</text>
       </view>
       <view v-if="!leftTitle" class="cmd-nav-bar-title" :style="'color:'+setFontColor">{{title}}</view>
@@ -200,10 +200,6 @@
 </script>
 
 <style lang="scss">
-	// 修改home图标颜色
-	.icon-home{
-		color: #fff !important;
-	}
   /* 导航栏样式变量 */
   $cmd-nav-bar-color : #000;
   $cmd-nav-bar-background : #fff;

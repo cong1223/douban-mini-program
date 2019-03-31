@@ -25,6 +25,24 @@
 				"navigationStyle":"custom"  
 			}
         }
+        ,{
+            "path" : "pages/movie-detail/movie-detail",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/want-to-see/want-to-see",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/had-seen-already/had-seen-already",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

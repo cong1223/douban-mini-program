@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/list/list",
     "pages/my/my",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/movie-detail/movie-detail",
+    "pages/want-to-see/want-to-see",
+    "pages/had-seen-already/had-seen-already"
   ],
   "subPackages": [],
   "window": {
