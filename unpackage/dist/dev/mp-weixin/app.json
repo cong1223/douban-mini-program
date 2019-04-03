@@ -6,7 +6,8 @@
     "pages/search/search",
     "pages/movie-detail/movie-detail",
     "pages/want-to-see/want-to-see",
-    "pages/had-seen-already/had-seen-already"
+    "pages/had-seen-already/had-seen-already",
+    "pages/look-all/look-all"
   ],
   "subPackages": [],
   "window": {

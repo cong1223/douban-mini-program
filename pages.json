@@ -43,6 +43,10 @@
 				"navigationStyle":"custom"
 			}
         }
+        ,{
+            "path" : "pages/look-all/look-all",
+            "style" : {"navigationStyle":"custom"}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

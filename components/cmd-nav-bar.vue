@@ -7,7 +7,9 @@
         <view v-if="back && !leftTitle || iconOne && !leftTitle " @tap="$_iconOneClick" class="cmd-nav-bar-left-icon">
           <cmd-icon :type="back ?'chevron-left' : iconOne" size="24" :color="setFontColor"></cmd-icon>
         </view>
+				<!-- 左侧自定义图标开始 -->
 				<view class="grace-iconfont icon-home icons.enName" :style="'color:'+setFontColor+'!important'"></view>
+				<!-- 左侧自定义图标结束 -->
         <text v-if="leftText && !leftTitle" @tap="$_leftTextClick" :style="'color:'+setFontColor">{{leftText}}</text>
       </view>
       <view v-if="!leftTitle" class="cmd-nav-bar-title" :style="'color:'+setFontColor">{{title}}</view>
@@ -234,7 +236,8 @@
     line-height: 92upx;
     color: $cmd-nav-bar-color;
     background: transparent;
-    box-shadow: 0 6upx 6upx -3upx rgba(0, 0, 0, .2);
+		// 导航栏底部线条阴影
+    // box-shadow: 0 6upx 6upx -3upx rgba(0, 0, 0, .2);
 
     /*所有都垂直占比*/
     &-left,

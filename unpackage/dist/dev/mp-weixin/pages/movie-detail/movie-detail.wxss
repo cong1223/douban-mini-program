@@ -24,25 +24,80 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.iconfont.data-v-06ec3645 {
+.grace-comment {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 50rpx;
+}
+.grace-comment .grace-comment-list {
+    border-bottom: #ccc;
+    padding: 20rpx;
+}
+.grace-comment .title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20rpx;
+}
+.grace-comment .title .notice {
+      font-size: 32rpx;
+}
+.grace-comment .title .more {
+      font-size: 26rpx;
+      color: #ccc;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.iconfont {
   width: 50rpx;
   height: 50rpx;
 }
-#movie-detail .wrapper.data-v-06ec3645 {
+#movie-detail .wrapper {
+  margin-top: 145rpx;
   padding: 25rpx;
   background-color: aliceblue;
 }
-#movie-detail .wrapper .movie-info.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
-#movie-detail .wrapper .movie-info .left image.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info .left image {
       width: 169rpx;
       height: 220rpx;
 }
-#movie-detail .wrapper .movie-info .right.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info .right {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -54,16 +109,16 @@
               flex-direction: column;
       padding-left: 25rpx;
 }
-#movie-detail .wrapper .movie-info .right .title.data-v-06ec3645 {
-        font-size: 36rpx;
+#movie-detail .wrapper .movie-info .right .title {
+        font-size: 32rpx;
         font-weight: bold;
 }
-#movie-detail .wrapper .movie-info .right .desc.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info .right .desc {
         font-size: 22rpx;
         color: #333;
         margin: 25rpx 0;
 }
-#movie-detail .wrapper .movie-info .right .btn.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info .right .btn {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -74,7 +129,7 @@
                 align-items: center;
         margin-left: 40rpx;
 }
-#movie-detail .wrapper .movie-info .right .btn navigator.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info .right .btn navigator {
           margin-right: 25rpx;
           border-radius: 10rpx;
           width: 200rpx;
@@ -93,7 +148,7 @@
               -ms-flex-align: center;
                   align-items: center;
 }
-#movie-detail .wrapper .movie-info .right .btn navigator text.data-v-06ec3645 {
+#movie-detail .wrapper .movie-info .right .btn navigator text {
             margin-right: 10rpx;
             display: -webkit-box;
             display: -webkit-flex;
@@ -109,14 +164,14 @@
                     align-items: center;
             color: orange;
 }
-#movie-detail .wrapper .rating-card.data-v-06ec3645 {
+#movie-detail .wrapper .rating-card {
     padding: 15rpx;
     background-color: #fff;
-    border-radius: 20rpx;
+    border-radius: 10rpx;
     padding: 0 25rpx;
     margin-top: 35rpx;
 }
-#movie-detail .wrapper .rating-card .title.data-v-06ec3645 {
+#movie-detail .wrapper .rating-card .title {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -125,8 +180,10 @@
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
+      padding: 15rpx;
 }
-#movie-detail .wrapper .rating-card .content.data-v-06ec3645 {
+#movie-detail .wrapper .rating-card .content {
+      padding: 40rpx;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -140,24 +197,101 @@
           -ms-flex-align: center;
               align-items: center;
 }
-#movie-detail .wrapper .rating-card .content .rating-score .rating-wrap.data-v-06ec3645 {
+#movie-detail .wrapper .rating-card .content .rating-wrap {
+        text-align: center;
+        width: 30%;
+}
+#movie-detail .wrapper .rating-card .content .rating-wrap .score {
+          font-size: 34rpx;
+          font-weight: bold;
+          margin-bottom: 20rpx;
+}
+#movie-detail .wrapper .rating-card .content .rating-count {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100rpx;
+        margin-left: 30rpx;
 }
-#movie-detail .wrapper .rating-card .content .rating-score .rating-wrap image.data-v-06ec3645 {
-          width: 20rpx;
-          height: 20rpx;
-          margin: 10rpx;
+#movie-detail .wrapper .rating-card .content .rating-count .counting-item {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+}
+#movie-detail .wrapper .rating-card .content .rating-count .counting-item .item-list {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+}
+#movie-detail .wrapper .rating-card .content .rating-count .counting-item .item-list .progress {
+              position: relative;
+              background-color: lightgray;
+              height: 10rpx;
+              width: 130rpx;
+              margin: 5rpx 0 0 10rpx;
+}
+#movie-detail .wrapper .rating-card .content .rating-count .counting-item .item-list .progress .cover {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 20%;
+                background-color: #00C777;
+}
+#movie-detail .wrapper .rating-card .content .rating-count .counting-item .counting-persons {
+            font-size: 16rpx;
+            color: darkgray;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+}
+#movie-detail .wrapper .summary .title {
+    text-align: left;
+    font-size: 28rpx;
+    font-weight: bold;
+    padding: 50rpx 0 20rpx 0;
+}
+#movie-detail .wrapper .summary .content {
+    font-size: 26rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden;
+}
+#movie-detail .wrapper .summary .toggle-text-btn {
+    width: 100%;
+    text-align: right;
+    font-size: 28rpx;
+    color: #ccc;
+}
+#movie-detail .wrapper .actor {
+    padding: 50rpx 0;
+}
+#movie-detail .wrapper .photos .title {
+    text-align: left;
+    font-size: 28rpx;
+    font-weight: bold;
+    padding: 20rpx 0;
+}
+#movie-detail .wrapper .photos image {
+    width: 100%;
+    height: 100%;
 }
 

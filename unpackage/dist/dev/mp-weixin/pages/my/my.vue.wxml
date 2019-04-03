@@ -1,1 +1,1 @@
-<template name="690e692a"><view class="_view 690e692a">my...</view></template>
+<import src="/graceUI/components/graceStar.vue.wxml" /><template name="57791b08"><view class="_view 57791b08"><view id="aa" class="_view 57791b08"><template data="{{...$root['0'], ...$root[$kk+'57791b08-0'],$root}}" is="7c4d04b0"></template></view></view></template>

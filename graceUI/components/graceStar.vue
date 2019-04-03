@@ -3,6 +3,9 @@
 	  <view class="grace-stars-items" v-for="(item, index) in starNum" :key="index" @tap="changNum" :data-val="index">
 		<image :src="currentNumber > index ? starImg[1] : starImg[0]" mode="widthFix"></image>
 	  </view>
+	  <view class="score" :style="{'display': scoreView ? 'block' : 'none'}">
+			{{score}}
+	  </view>
 	</view>
 </template>
 <script>
@@ -29,6 +32,14 @@ export default {
 		canTap : {
 		  type : Boolean,
 		  default : true
+		},
+		score: {
+			type: Number,
+			default : 0
+		},
+		scoreView: {
+			type: Boolean,
+			default: true
 		}
 	},
 	data() {
@@ -50,7 +61,8 @@ export default {
 }
 </script>
 <style>
-.grace-stars{display:flex; flex-wrap:nowrap;}
-.grace-stars-items{width:15upx;margin:0 3px;}
-.grace-stars-items image{height: 100%;width:100%;}
+.grace-stars{padding:5px 5px 5px 0; display:flex; flex-wrap:nowrap; justify-content:space-between;}
+.grace-stars-items{width:100%; margin:0 5px;display: flex;align-items: center;}
+.grace-stars-items image{width:100%;}
+.grace-stars .score{margin-left: 10upx; font-size: 22upx;display: flex;align-items: center; color: #666;}
 </style>

@@ -24,67 +24,61 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.flex-center {
+.wrapper {
+  padding: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
-.search-box {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-.search-box .search {
-    background-color: #fff;
-    border-radius: 10px;
-    height: 60rpx;
+.wrapper .card {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #8a8a8a;
+    width: 176rpx;
+    margin: 20rpx 30rpx;
 }
-.search-box .search image {
-      width: 40rpx;
-      height: 40rpx;
-      margin-right: 10rpx;
+.wrapper .card .item-img {
+      width: 100%;
+      height: 220rpx;
 }
-.sort-list {
-  margin-top: 80rpx;
+.wrapper .card .name {
+      font-weight: bold;
+      font-size: 22rpx;
+      margin-top: 15rpx;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
 }
-.sort-list .grace-stars {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+.wrapper .card .grace-stars {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
 }
-.sort-list .grace-stars-items {
-    width: 15rpx;
-    margin: 0 2px;
+.wrapper .card .grace-stars-items {
+      width: 15rpx;
+      margin: 0 2px;
 }
-.sort-list .grace-stars-items image {
-    height: 100%;
-    width: 100%;
+.wrapper .card .grace-stars-items image {
+      height: 100%;
+      width: 100%;
 }
 

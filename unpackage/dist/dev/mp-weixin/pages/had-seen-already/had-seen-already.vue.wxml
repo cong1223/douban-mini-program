@@ -1,1 +1,1 @@
-<import src="/components/cmd-nav-bar.vue.wxml" /><template name="4e45ebab"><view class="_view 4e45ebab"><template background-color="#fff" font-color="#000" back title="看过" data="{{...$root['0'], ...$root[$kk+'4e45ebab-0'],$root}}" is="57b2c676"></template></view></template>
+<import src="/components/cmd-nav-bar.vue.wxml" /><template name="506e4470"><view class="_view 506e4470"><template background-color="#fff" font-color="#000" back title="看过" data="{{...$root['0'], ...$root[$kk+'506e4470-0'],$root}}" is="54a4fa8e"></template></view></template>

@@ -883,8 +883,6 @@ to {-webkit-transform:rotateY(360deg);transform:rotateY(360deg);}}
   line-height: 92rpx;
   color: #000;
   background: transparent;
-  -webkit-box-shadow: 0 6rpx 6rpx -3rpx rgba(0, 0, 0, 0.2);
-          box-shadow: 0 6rpx 6rpx -3rpx rgba(0, 0, 0, 0.2);
   /*所有都垂直占比*/
   /*左侧*/
   /*标题部分 */

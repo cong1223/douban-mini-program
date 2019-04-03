@@ -1,6 +1,6 @@
 <template>
 	<view class="wrapper">
-		<view style="width:96%; padding:20upx 2%; background:#00C777; flex-wrap:nowrap;">
+		<view class="search-box" style="width:96%; padding:20upx 2%; background:#00C777; flex-wrap:nowrap;">
 			<view class="search" @tap="skipSearch">
 				<image src="../../static/images/sousuo.png"></image>
 				<text class="flex-center">搜索</text>
@@ -8,19 +8,19 @@
 		</view>
 		<view class="sort-list">
 			<view id="hot-showing">
-				<movie-item :movieData="hotShowingData" sort="影院热映"></movie-item>
+				<movie-item :movieData="hotShowingData" sort="影院热映" mode="movie" :home="true"></movie-item>
 			</view>
 			<view id="top250">
-				<movie-item :movieData="top250" sort="Top250"></movie-item>
+				<movie-item :movieData="top250" sort="Top250" mode="movie" :home="true"></movie-item>
 			</view>
 			<view id="coming-soon">
-				<movie-item :movieData="comingSoon" sort="即将上映"></movie-item>
+				<movie-item :movieData="comingSoon" sort="即将上映" mode="movie" :home="true"></movie-item>
 			</view>
 			<view id="new-of-ist">
-				<movie-item :movieData="newList" sort="新片榜"></movie-item>
+				<movie-item :movieData="newList" sort="新片榜"  mode="movie" :home="true"></movie-item>
 			</view>
 			<view id="public-praise-list">
-				<movie-item :movieData="publicPraiseList" sort="本周口碑榜"></movie-item>
+				<movie-item :movieData="publicPraiseList" sort="本周口碑榜" mode="movie" :home="true"></movie-item>
 			</view>
 		</view>
 	</view>
@@ -63,7 +63,7 @@ export default {
 				url: 'https://douban.uieee.com/v2/movie/in_theaters',
 				method: 'GET',
 				header:{
-					"Content-Type":"application/xml"
+					"content-type":"json"
 				},
 				data: {
 					start: 0,
@@ -84,7 +84,7 @@ export default {
 				url: 'https://douban.uieee.com/v2/movie/top250',
 				method: 'GET',
 				header:{
-					"Content-Type":"application/xml"
+					"content-type":"json"
 				},
 				data: {
 					start: 0,
@@ -105,7 +105,7 @@ export default {
 				url: 'https://douban.uieee.com/v2/movie/coming_soon',
 				method: 'GET',
 				header:{
-					"Content-Type":"application/xml"
+					"content-type":"json"
 				},
 				data: {
 					start: 0,
@@ -126,7 +126,7 @@ export default {
 				url: 'https://douban.uieee.com/v2/movie/new_movies?apikey=0df993c66c0c636e29ecbb5344252a4a',
 				method: 'GET',
 				header:{
-					"Content-Type":"application/xml"
+					"content-type":"json"
 				},
 				success: res => {
 					this.newList = res.data.subjects;
@@ -143,7 +143,7 @@ export default {
 				url: 'https://douban.uieee.com/v2/movie/weekly',
 				method: 'GET',
 				header:{
-					"Content-Type":"application/xml"
+					"content-type":"json"
 				},
 				success: res => {
 					let list = res.data.subjects;
@@ -166,27 +166,30 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
-.search {
-	background-color: #fff;
-	border-radius: 10px;
-	height: 60upx;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #8a8a8a;
-	image {
-		width: 40upx;
-		height: 40upx;
-		margin-right: 10upx;
-	}
-}
-#hot-showing{
-	.grace-items{
-		width: 169upx;
-		.movie-item{
-			display: flex;
-			flex-direction: column;
+.search-box{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	.search {
+		background-color: #fff;
+		border-radius: 10px;
+		height: 60upx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #8a8a8a;
+		image {
+			width: 40upx;
+			height: 40upx;
+			margin-right: 10upx;
 		}
 	}
+}
+.sort-list{
+	margin-top: 80upx;
+	.grace-stars{display:flex; flex-wrap:nowrap;}
+	.grace-stars-items{width:15upx;margin:0 2px;}
+	.grace-stars-items image{height: 100%;width:100%;}
 }
 </style>
