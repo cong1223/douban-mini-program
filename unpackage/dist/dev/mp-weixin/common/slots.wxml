@@ -1,1 +1,7 @@
+<import src="/components/cmd-icon.vue.wxml" />
+<import src="/components/movie-item.vue.wxml" />
+<import src="/graceUI/components/graceStar.vue.wxml" />
+<import src="/components/cmd-nav-bar.vue.wxml" />
+<import src="/components/comment.vue.wxml" />
+<import src="/components/item-list.vue.wxml" />
 

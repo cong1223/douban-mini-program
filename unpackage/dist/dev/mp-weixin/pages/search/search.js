@@ -554,7 +554,7 @@ var render = function() {
               _c("view", { staticClass: "grace-search-icon" }),
               _c("input", {
                 attrs: {
-                  focus: true,
+                  focus: "",
                   type: "search",
                   value: _vm.searchKey,
                   placeholder: "关键字",

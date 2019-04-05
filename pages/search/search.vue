@@ -20,7 +20,7 @@
             <view class="grace-search">
                 <view class="grace-search-in flex-center">
                     <view class="grace-search-icon"></view>
-                    <input :focus="true" type="search" @input="searchChange" @confirm="searchNow" :value="searchKey" placeholder="关键字"></input>
+                    <input focus type="search" @input="searchChange" @confirm="searchNow" :value="searchKey" placeholder="关键字"></input>
                     <view class="grace-search-icon grace-search-clear" @tap="clearKey" v-if="searchClose"></view>
                 </view>
             </view>
